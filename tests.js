@@ -45,7 +45,15 @@ describe('helloWorld', function() {
     it('should be a defined function', function () {
         expect(typeof sayHello).toBe('function');
     });
-    it('should return the string "Hello, Alex!" when executed', function () {
+    it('should return the string "Hello, Pat!" when executed', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+});
+
+describe("sayHello", function () {
+    it('should be a defined function', function () {
+        expect(typeof sayHello).toBe('function');
+    });
+        expect(sayHello("world")).toBe("Hello, World!");
+
 });
